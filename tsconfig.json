@@ -20,6 +20,7 @@
 			"@components/*": ["components/*"],
 			"@layout/*": ["components/layout/*"],
 			"@hooks/*": ["hooks/*"],
+			"@services/*": ["services/*"],
 			"@helper/*": ["helper/*"],
 			"@styles/*": ["styles/*"]
 		},

@@ -3,11 +3,11 @@ import React from 'react'
 const AppContext = React.createContext(null)
 
 export function ContextWrapper({ children }) {
-	const [selectedPlaceID, setSelectedPlaceID] = React.useState(null)
+	const [input, setInput] = React.useState(null)
 
 	let sharedState: object = {
-		selectedPlaceID: selectedPlaceID,
-		setSelectedPlaceID: setSelectedPlaceID,
+		input: input,
+		setInput: setInput,
 	}
 
 	return (

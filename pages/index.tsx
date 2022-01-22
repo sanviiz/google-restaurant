@@ -1,7 +1,19 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useAppContext } from '@hooks/context'
+import { getRestaurants } from '@services/getRestaurants'
 
 const Home: NextPage = () => {
+	const context = useAppContext()
+
+	React.useEffect(() => {
+		;(async () => {
+			const res = await getRestaurants(context.input)
+			console.log(res)
+		})()
+	}, [context.input])
+
 	return (
 		<>
 			<Head>
