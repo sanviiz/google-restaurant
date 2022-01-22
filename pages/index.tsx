@@ -38,7 +38,9 @@ const Home: NextPage = () => {
 						</div>
 					))
 				) : (
-					<span className="text-3xl font-semibold">Loading...</span>
+					<span className="sm:text-3xl text-2xl font-semibold">
+						Loading...
+					</span>
 				)}
 			</div>
 		</>

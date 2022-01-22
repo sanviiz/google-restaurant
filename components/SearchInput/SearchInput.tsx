@@ -24,7 +24,7 @@ function SearchInput() {
 					type="text"
 					ref={inputEl}
 					onKeyPress={onKeypress}
-					className={`outline-none border border-gray-400 pl-2 pr-7 py-0.5 w-72 truncate`}
+					className={`outline-none border border-gray-400 pl-2 pr-7 py-0.5 xs:w-72 w-60 truncate`}
 					placeholder=""
 				/>
 				<VscSearch
