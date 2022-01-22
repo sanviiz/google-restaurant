@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { useAppContext } from '@hooks/context'
 import { getRestaurants } from '@services/getRestaurants'
 import RestaurantCard from '@components/RestaurantCard/RestaurantCard'
+import { Code } from 'react-content-loader'
 
 const Home: NextPage = () => {
 	const [renderData, setRenderData] = React.useState(null)
@@ -31,16 +32,20 @@ const Home: NextPage = () => {
 			</Head>
 
 			<div className="text-center">
-				{renderData ? (
+				{renderData?.length === 0 ? (
+					<span className="sm:text-2xl text-xl font-medium">
+						Not found.
+					</span>
+				) : renderData ? (
 					renderData?.map((record: Object, index: number) => (
 						<div className="mb-6" key={index}>
 							<RestaurantCard data={record} />
 						</div>
 					))
 				) : (
-					<span className="sm:text-3xl text-2xl font-semibold">
-						Loading...
-					</span>
+					<div className="lg:w-1/2 inline-block xs:w-4/5 w-11/12">
+						<Code />
+					</div>
 				)}
 			</div>
 		</>
