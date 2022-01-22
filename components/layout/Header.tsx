@@ -30,12 +30,12 @@ const SearchGroup = () => {
 const Header = () => {
 	return (
 		<>
-			<div
-				className={`w-full border-y border-gray-400 sticky top-0 flex p-6 justify-between items-center bg-white`}
+			<header
+				className={`w-full border-y border-gray-400 sticky top-0 flex p-6 justify-between items-center bg-white z-10`}
 			>
 				<LogoGroup />
 				<SearchGroup />
-			</div>
+			</header>
 		</>
 	)
 }
