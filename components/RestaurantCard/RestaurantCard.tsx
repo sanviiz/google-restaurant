@@ -26,8 +26,8 @@ function RestaurantCard({ data }) {
 							href={`https://www.google.com/maps/search/?api=1&query=${data?.name}&query_place_id=${data?.place_id}`}
 							className="text-lg font-semibold inline-block ml-4"
 						>
-							{data?.name}
-							<GrShare className="inline-block ml-2 align-baseline" />
+							{data?.name}{' '}
+							<GrShare className="inline align-baseline" />
 						</a>
 						<span className="text-base font-medium inline-block my-2">
 							{data?.formatted_address}
