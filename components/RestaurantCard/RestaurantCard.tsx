@@ -22,6 +22,7 @@ function RestaurantCard({ data }) {
 					<div className="flex-auto text-left">
 						<a
 							target="_blank"
+                            rel="noreferrer"
 							href={`https://www.google.com/maps/place/?q=place_id:${data?.place_id}`}
 							className="text-lg font-semibold inline-block ml-4"
 						>
