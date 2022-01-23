@@ -1,5 +1,6 @@
 import React from 'react'
 import TypeTag from '@components/TypeTag/TypeTag'
+import { GrShare } from 'react-icons/gr'
 const Fade = require('react-reveal/Fade')
 
 function RestaurantCard({ data }) {
@@ -19,9 +20,14 @@ function RestaurantCard({ data }) {
 						/>
 					</div>
 					<div className="flex-auto text-left">
-						<span className="text-lg font-semibold inline-block ml-4">
+						<a
+							target="_blank"
+							href={`https://www.google.com/maps/place/?q=place_id:${data?.place_id}`}
+							className="text-lg font-semibold inline-block ml-4"
+						>
 							{data?.name}
-						</span>
+							<GrShare className="inline-block ml-2 align-baseline" />
+						</a>
 						<span className="text-base font-medium inline-block my-2">
 							{data?.formatted_address}
 						</span>

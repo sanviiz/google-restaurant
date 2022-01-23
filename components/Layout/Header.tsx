@@ -33,7 +33,7 @@ const Header = () => {
 	return (
 		<>
 			<header
-				className={`w-full border-y border-gray-400 sticky top-0 flex sm:flex-row flex-col p-6 justify-between items-center bg-white z-10`}
+				className={`w-full border-y border-gray-400 sticky top-0 flex sm:flex-row flex-col p-6 justify-between items-center bg-white/90 z-10 backdrop-blur`}
 			>
 				<LogoGroup />
 				<SearchGroup />
