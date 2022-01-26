@@ -1,5 +1,5 @@
 const axios = require('axios').default
-const url: string = `https://corsanywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json`
+const url: string = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/textsearch/json`
 const key: string = process.env.NEXT_PUBLIC_API_KEY
 
 export function getRestaurants(query: string) {
